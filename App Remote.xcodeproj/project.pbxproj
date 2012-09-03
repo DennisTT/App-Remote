@@ -13,7 +13,45 @@
 		9555DE2015F546960078CD35 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9555DE1E15F546960078CD35 /* Credits.rtf */; };
 		9555DE2315F546960078CD35 /* ARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9555DE2215F546960078CD35 /* ARAppDelegate.m */; };
 		9555DE2615F546960078CD35 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9555DE2415F546960078CD35 /* MainMenu.xib */; };
+		9555DE2D15F546AA0078CD35 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9555DE2C15F546AA0078CD35 /* IOKit.framework */; };
+		9555DE4F15F546F50078CD35 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9555DE3015F546F50078CD35 /* .gitignore */; };
+		9555DE5015F546F50078CD35 /* AppleRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 9555DE3215F546F50078CD35 /* AppleRemote.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9555DE5115F546F50078CD35 /* AppleRemote.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 9555DE3315F546F50078CD35 /* AppleRemote.tiff */; };
+		9555DE5215F546F50078CD35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9555DE3415F546F50078CD35 /* InfoPlist.strings */; };
+		9555DE5315F546F50078CD35 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 9555DE3615F546F50078CD35 /* MainMenu.nib */; };
+		9555DE5415F546F50078CD35 /* HIDRemoteControlDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9555DE3915F546F50078CD35 /* HIDRemoteControlDevice.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9555DE5515F546F50078CD35 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9555DE3A15F546F50078CD35 /* Info.plist */; };
+		9555DE5615F546F50078CD35 /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9555DE3B15F546F50078CD35 /* license.txt */; };
+		9555DE5915F546F50078CD35 /* MultiClickRemoteBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 9555DE4015F546F50078CD35 /* MultiClickRemoteBehavior.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9555DE5A15F546F50078CD35 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 9555DE4115F546F50078CD35 /* README.markdown */; };
+		9555DE5B15F546F50078CD35 /* RemoteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9555DE4315F546F50078CD35 /* RemoteControl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9555DE5C15F546F50078CD35 /* RemoteControls-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9555DE4415F546F50078CD35 /* RemoteControls-Info.plist */; };
+		9555DE6815F547DC0078CD35 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9555DE6715F547DC0078CD35 /* .gitignore */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9555DE6115F546F60078CD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9555DE4515F546F50078CD35 /* RemoteControlWrapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = RemoteControlWrapper;
+		};
+		9555DE6315F546F60078CD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9555DE4515F546F50078CD35 /* RemoteControlWrapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C00A64F2128AD7EC00AF7E82;
+			remoteInfo = RemoteControl;
+		};
+		9555DE6515F546F60078CD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9555DE4515F546F50078CD35 /* RemoteControlWrapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C083548B144EBDB000CED0EC;
+			remoteInfo = AppleRemote;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9555DE0B15F546960078CD35 /* App Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +67,31 @@
 		9555DE2115F546960078CD35 /* ARAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAppDelegate.h; sourceTree = "<group>"; };
 		9555DE2215F546960078CD35 /* ARAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARAppDelegate.m; sourceTree = "<group>"; };
 		9555DE2515F546960078CD35 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9555DE2C15F546AA0078CD35 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		9555DE3015F546F50078CD35 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9555DE3115F546F50078CD35 /* AppleRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleRemote.h; sourceTree = "<group>"; };
+		9555DE3215F546F50078CD35 /* AppleRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleRemote.m; sourceTree = "<group>"; };
+		9555DE3315F546F50078CD35 /* AppleRemote.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = AppleRemote.tiff; sourceTree = "<group>"; };
+		9555DE3515F546F50078CD35 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9555DE3715F546F50078CD35 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		9555DE3815F546F50078CD35 /* HIDRemoteControlDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIDRemoteControlDevice.h; sourceTree = "<group>"; };
+		9555DE3915F546F50078CD35 /* HIDRemoteControlDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIDRemoteControlDevice.m; sourceTree = "<group>"; };
+		9555DE3A15F546F50078CD35 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9555DE3B15F546F50078CD35 /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		9555DE3C15F546F50078CD35 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9555DE3D15F546F50078CD35 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		9555DE3E15F546F50078CD35 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		9555DE3F15F546F50078CD35 /* MultiClickRemoteBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiClickRemoteBehavior.h; sourceTree = "<group>"; };
+		9555DE4015F546F50078CD35 /* MultiClickRemoteBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiClickRemoteBehavior.m; sourceTree = "<group>"; };
+		9555DE4115F546F50078CD35 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		9555DE4215F546F50078CD35 /* RemoteControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteControl.h; sourceTree = "<group>"; };
+		9555DE4315F546F50078CD35 /* RemoteControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteControl.m; sourceTree = "<group>"; };
+		9555DE4415F546F50078CD35 /* RemoteControls-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RemoteControls-Info.plist"; sourceTree = "<group>"; };
+		9555DE4515F546F50078CD35 /* RemoteControlWrapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = RemoteControlWrapper.xcodeproj; sourceTree = "<group>"; };
+		9555DE4815F546F50078CD35 /* RemoteControlWrapper_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteControlWrapper_Prefix.pch; sourceTree = "<group>"; };
+		9555DE4915F546F50078CD35 /* RemoteFeedbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteFeedbackView.h; sourceTree = "<group>"; };
+		9555DE4A15F546F50078CD35 /* RemoteFeedbackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteFeedbackView.m; sourceTree = "<group>"; };
+		9555DE6715F547DC0078CD35 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9555DE2D15F546AA0078CD35 /* IOKit.framework in Frameworks */,
 				9555DE1015F546960078CD35 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +110,7 @@
 		9555DE0015F546960078CD35 = {
 			isa = PBXGroup;
 			children = (
+				9555DE6715F547DC0078CD35 /* .gitignore */,
 				9555DE1515F546960078CD35 /* App Remote */,
 				9555DE0E15F546960078CD35 /* Frameworks */,
 				9555DE0C15F546960078CD35 /* Products */,
@@ -63,6 +128,7 @@
 		9555DE0E15F546960078CD35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9555DE2C15F546AA0078CD35 /* IOKit.framework */,
 				9555DE0F15F546960078CD35 /* Cocoa.framework */,
 				9555DE1115F546960078CD35 /* Other Frameworks */,
 			);
@@ -85,6 +151,7 @@
 				9555DE2115F546960078CD35 /* ARAppDelegate.h */,
 				9555DE2215F546960078CD35 /* ARAppDelegate.m */,
 				9555DE2415F546960078CD35 /* MainMenu.xib */,
+				9555DE2E15F546F50078CD35 /* libs */,
 				9555DE1615F546960078CD35 /* Supporting Files */,
 			);
 			path = "App Remote";
@@ -100,6 +167,54 @@
 				9555DE1E15F546960078CD35 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9555DE2E15F546F50078CD35 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				9555DE2F15F546F50078CD35 /* apple_remote_control */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		9555DE2F15F546F50078CD35 /* apple_remote_control */ = {
+			isa = PBXGroup;
+			children = (
+				9555DE3015F546F50078CD35 /* .gitignore */,
+				9555DE3115F546F50078CD35 /* AppleRemote.h */,
+				9555DE3215F546F50078CD35 /* AppleRemote.m */,
+				9555DE3315F546F50078CD35 /* AppleRemote.tiff */,
+				9555DE3415F546F50078CD35 /* InfoPlist.strings */,
+				9555DE3615F546F50078CD35 /* MainMenu.nib */,
+				9555DE3815F546F50078CD35 /* HIDRemoteControlDevice.h */,
+				9555DE3915F546F50078CD35 /* HIDRemoteControlDevice.m */,
+				9555DE3A15F546F50078CD35 /* Info.plist */,
+				9555DE3B15F546F50078CD35 /* license.txt */,
+				9555DE3C15F546F50078CD35 /* main.m */,
+				9555DE3D15F546F50078CD35 /* MainController.h */,
+				9555DE3E15F546F50078CD35 /* MainController.m */,
+				9555DE3F15F546F50078CD35 /* MultiClickRemoteBehavior.h */,
+				9555DE4015F546F50078CD35 /* MultiClickRemoteBehavior.m */,
+				9555DE4115F546F50078CD35 /* README.markdown */,
+				9555DE4215F546F50078CD35 /* RemoteControl.h */,
+				9555DE4315F546F50078CD35 /* RemoteControl.m */,
+				9555DE4415F546F50078CD35 /* RemoteControls-Info.plist */,
+				9555DE4515F546F50078CD35 /* RemoteControlWrapper.xcodeproj */,
+				9555DE4815F546F50078CD35 /* RemoteControlWrapper_Prefix.pch */,
+				9555DE4915F546F50078CD35 /* RemoteFeedbackView.h */,
+				9555DE4A15F546F50078CD35 /* RemoteFeedbackView.m */,
+			);
+			path = apple_remote_control;
+			sourceTree = "<group>";
+		};
+		9555DE4615F546F50078CD35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9555DE6215F546F60078CD35 /* AppleRemote.app */,
+				9555DE6415F546F60078CD35 /* libRemoteControl.a */,
+				9555DE6615F546F60078CD35 /* AppleRemote.dylib */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,16 +253,47 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = 9555DE0015F546960078CD35;
 			productRefGroup = 9555DE0C15F546960078CD35 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9555DE4615F546F50078CD35 /* Products */;
+					ProjectRef = 9555DE4515F546F50078CD35 /* RemoteControlWrapper.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9555DE0A15F546960078CD35 /* App Remote */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9555DE6215F546F60078CD35 /* AppleRemote.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AppleRemote.app;
+			remoteRef = 9555DE6115F546F60078CD35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9555DE6415F546F60078CD35 /* libRemoteControl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRemoteControl.a;
+			remoteRef = 9555DE6315F546F60078CD35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9555DE6615F546F60078CD35 /* AppleRemote.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = AppleRemote.dylib;
+			remoteRef = 9555DE6515F546F60078CD35 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9555DE0915F546960078CD35 /* Resources */ = {
@@ -157,6 +303,15 @@
 				9555DE1A15F546960078CD35 /* InfoPlist.strings in Resources */,
 				9555DE2015F546960078CD35 /* Credits.rtf in Resources */,
 				9555DE2615F546960078CD35 /* MainMenu.xib in Resources */,
+				9555DE4F15F546F50078CD35 /* .gitignore in Resources */,
+				9555DE5115F546F50078CD35 /* AppleRemote.tiff in Resources */,
+				9555DE5215F546F50078CD35 /* InfoPlist.strings in Resources */,
+				9555DE5315F546F50078CD35 /* MainMenu.nib in Resources */,
+				9555DE5515F546F50078CD35 /* Info.plist in Resources */,
+				9555DE5615F546F50078CD35 /* license.txt in Resources */,
+				9555DE5A15F546F50078CD35 /* README.markdown in Resources */,
+				9555DE5C15F546F50078CD35 /* RemoteControls-Info.plist in Resources */,
+				9555DE6815F547DC0078CD35 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +324,10 @@
 			files = (
 				9555DE1C15F546960078CD35 /* main.m in Sources */,
 				9555DE2315F546960078CD35 /* ARAppDelegate.m in Sources */,
+				9555DE5015F546F50078CD35 /* AppleRemote.m in Sources */,
+				9555DE5415F546F50078CD35 /* HIDRemoteControlDevice.m in Sources */,
+				9555DE5915F546F50078CD35 /* MultiClickRemoteBehavior.m in Sources */,
+				9555DE5B15F546F50078CD35 /* RemoteControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +356,22 @@
 				9555DE2515F546960078CD35 /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9555DE3415F546F50078CD35 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9555DE3515F546F50078CD35 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9555DE3615F546F50078CD35 /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9555DE3715F546F50078CD35 /* English */,
+			);
+			name = MainMenu.nib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,6 +433,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "App Remote/App Remote-Prefix.pch";
 				INFOPLIST_FILE = "App Remote/App Remote-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -270,6 +446,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "App Remote/App Remote-Prefix.pch";
 				INFOPLIST_FILE = "App Remote/App Remote-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

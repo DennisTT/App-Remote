@@ -1,0 +1,3 @@
+[submodule "App Remote/libs/apple_remote_control"]
+	path = App Remote/libs/apple_remote_control
+	url = https://github.com/DennisTT/apple_remote_control.git
