@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9507403815F5A9F900BFDECF /* Default.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9507403715F5A9F900BFDECF /* Default.scpt */; };
 		9507403D15F5AF1100BFDECF /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9507403B15F5AEFA00BFDECF /* Carbon.framework */; };
+		9507403F15F5DE6400BFDECF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9507403E15F5DE6300BFDECF /* README.md */; };
 		9555DE1015F546960078CD35 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9555DE0F15F546960078CD35 /* Cocoa.framework */; };
 		9555DE1A15F546960078CD35 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9555DE1815F546960078CD35 /* InfoPlist.strings */; };
 		9555DE1C15F546960078CD35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9555DE1B15F546960078CD35 /* main.m */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		9507403715F5A9F900BFDECF /* Default.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = Default.scpt; sourceTree = "<group>"; };
 		9507403B15F5AEFA00BFDECF /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		9507403E15F5DE6300BFDECF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		9555DE0B15F546960078CD35 /* App Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9555DE0F15F546960078CD35 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9555DE1215F546960078CD35 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -123,6 +125,7 @@
 		9555DE0015F546960078CD35 = {
 			isa = PBXGroup;
 			children = (
+				9507403E15F5DE6300BFDECF /* README.md */,
 				9555DE6715F547DC0078CD35 /* .gitignore */,
 				9555DE1515F546960078CD35 /* App Remote */,
 				9555DE0E15F546960078CD35 /* Frameworks */,
@@ -328,6 +331,7 @@
 				9555DE5C15F546F50078CD35 /* RemoteControls-Info.plist in Resources */,
 				9555DE6815F547DC0078CD35 /* .gitignore in Resources */,
 				9507403815F5A9F900BFDECF /* Default.scpt in Resources */,
+				9507403F15F5DE6400BFDECF /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
