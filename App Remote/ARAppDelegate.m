@@ -27,11 +27,19 @@
 
     // Initialize Apple Remote listener
     appleRemote = [[AppleRemote alloc] initWithDelegate:self];
+    if (!appleRemote)
+    {
+        NSAlert *alert = [NSAlert new];
+        [alert setMessageText:@"Remote is being used by another application"];
+        [alert runModal];
+        
+        [self onQuit:nil];
+    }
 	remoteBehavior = [MultiClickRemoteBehavior new];
 	[remoteBehavior setDelegate:self];
+    [remoteBehavior setSimulateHoldEvent:YES];
 	[appleRemote setDelegate:remoteBehavior];
     [appleRemote startListening:self];
-    remoteBehavior set
     
     // Parse scripts
     loadedScripts = [NSMutableDictionary new];
@@ -59,9 +67,13 @@
 - (void)remoteButton:(RemoteControlEventIdentifier)buttonIdentifier pressedDown:(BOOL)pressedDown clickCount:(unsigned int)count
 {
     NSLog(@"Remote button pressed: %@ %d %d", [self stringFromButtonIdentifier:buttonIdentifier], pressedDown, count);
-
-    // Handle menu special stuff
-    if (buttonIdentifier == kRemoteButtonMenu_Hold)
+    
+    // Trap special menu calls
+    if (buttonIdentifier == kRemoteButtonMenu || buttonIdentifier == kRemoteButtonMenu_Hold)
+    {
+        // TODO
+        return;
+    }
     
     if (!pressedDown)
     {
