@@ -12,6 +12,8 @@
 
 @implementation ARAppDelegate
 
+#pragma mark - Initialization
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Check that we have a script directory, and prompt if not found.
@@ -63,6 +65,16 @@
     NSAppleScript *script = [[NSAppleScript alloc] initWithContentsOfURL:fileUrl error:nil];
     [loadedScripts setObject:script forKey:@"Default"];
 }
+
+- (void)awakeFromNib
+{
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [statusItem setMenu:statusMenu];
+    [statusItem setTitle:@"▶"];
+    [statusItem setHighlightMode:YES];
+}
+
+#pragma mark - Remote event handler
 
 - (void)remoteButton:(RemoteControlEventIdentifier)buttonIdentifier pressedDown:(BOOL)pressedDown clickCount:(unsigned int)count
 {
@@ -120,26 +132,11 @@
     }
 }
 
-- (NSRunningApplication *)getCurrentActiveApplication
-{
-    for (NSRunningApplication *app in [[NSWorkspace sharedWorkspace] runningApplications]) {
-        if (app.active) {
-            return app;
-        }
-    }
 
-    return nil;
-}
 
-- (void)awakeFromNib
-{
-    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    [statusItem setMenu:statusMenu];
-    [statusItem setTitle:@"▶"];
-    [statusItem setHighlightMode:YES];
-}
+#pragma mark - Menu Actions
 
--(IBAction)onChooseFolder:(id)sender
+- (IBAction)onChooseFolder:(id)sender
 {
     NSOpenPanel *openPanel = [NSOpenPanel openPanel];
     [openPanel setCanChooseDirectories:YES];
@@ -160,9 +157,45 @@
     }
 }
 
--(IBAction)onQuit:(id)sender
+- (IBAction)onAbout:(id)sender
+{
+    [self.window makeKeyAndOrderFront:self];
+    [self.window orderFrontRegardless];
+}
+
+- (IBAction)onQuit:(id)sender
 {
     [NSApp terminate:self];
+}
+
+#pragma mark - About Window Actions
+
+- (IBAction)onGitHub:(id)sender
+{
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.github.com/DennisTT/App-Remote"]];
+}
+
+- (IBAction)onDennisTTNet:(id)sender
+{
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.dennistt.net"]];
+}
+
+- (IBAction)onAboutClose:(id)sender
+{
+    [self.window close];
+}
+
+#pragma mark - Helpers
+
+- (NSRunningApplication *)getCurrentActiveApplication
+{
+    for (NSRunningApplication *app in [[NSWorkspace sharedWorkspace] runningApplications]) {
+        if (app.active) {
+            return app;
+        }
+    }
+    
+    return nil;
 }
 
 -(NSString *)stringFromButtonIdentifier:(RemoteControlEventIdentifier)anEventId

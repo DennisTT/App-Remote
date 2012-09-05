@@ -24,7 +24,12 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
--(IBAction)onChooseFolder:(id)sender;
--(IBAction)onQuit:(id)sender;
+- (IBAction)onChooseFolder:(id)sender;
+- (IBAction)onAbout:(id)sender;
+- (IBAction)onQuit:(id)sender;
+
+- (IBAction)onGitHub:(id)sender;
+- (IBAction)onDennisTTNet:(id)sender;
+- (IBAction)onAboutClose:(id)sender;
 
 @end
