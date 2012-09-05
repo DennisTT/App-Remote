@@ -16,7 +16,7 @@ Installing the Binary
  5. Double-click "App Remote.app" to open it.
  6. The first time you launch the app, you will be prompted to choose a folder.  Select the "App Remote Scripts" folder you copied earlier.
 
-See [Usage](#Usage) below for scripting instructions.
+See [Usage](#usage) below for scripting instructions.
 
 Building
 --------
